@@ -11,8 +11,8 @@
             “They always say time changes things, but you actually have to change them yourself”
             - Andy Warhol, American Visual Artist
           </p>
-          <a href="" class="cs-button-solid">Play Game</a>
-          <a href="" class="cs-button-transparent">
+          <a href="" class="cs-button-solid btn-text">Play Game</a>
+          <a href="" class="cs-button-transparent btn-text">
               <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
               Watch Trailer
           </a>
@@ -156,6 +156,7 @@
     color: var(--bodyTextColorWhite);
     position: relative;
   }
+
   #hero-229 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
@@ -169,20 +170,21 @@
     color: var(--bodyTextColorWhite);
   }
   #hero-229 .cs-button-solid {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     text-align: center;
     text-decoration: none;
     min-width: 9.375rem;
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
     margin: 0;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
-    padding: 0 3rem;
+    padding: 0 3 rem;
     background-color: var(--primary);
     overflow: hidden;
-    color: #fff;
+    color: #000;
     border: none;
     display: inline-block;
     position: relative;
@@ -208,7 +210,7 @@
     width: 100%;
   }
   #hero-229 .cs-button-transparent {
-    font-size: 1rem;
+    font-size: 1.10rem; 
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     width: 11.25rem;
@@ -253,6 +255,9 @@
     margin-right: 0.75rem;
   }
 }
+  #hero-229 .btn-text{
+      /* font-size: 18px; */
+    }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-229 {
