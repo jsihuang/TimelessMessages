@@ -27,12 +27,22 @@ import Reviews from "../components/reviews.astro";
 </audio>
 
 <script>
-	window.addEventListener('load', () => {
-		const audio = document.getElementById('myAudio') as HTMLAudioElement;
-		if (audio) {
-				audio.play();
-		}
-	});
+	// Get a reference to your audio element
+	const audio = document.getElementById('myAudio') as HTMLAudioElement;
+
+	// Function to play the audio
+	const playAudio = () => {
+		audio.play();
+	}
+
+	// Check if user has scrolled to a certain amount (e.g., 100 pixels)
+	window.addEventListener('scroll', () => {
+  // Check if the user has scrolled a certain amount (e.g., 100 pixels)
+  if (window.scrollY > 100) {
+    // Call the playAudio function to start playing the audio
+    playAudio();
+  }
+});
 </script>
 
 
