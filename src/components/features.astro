@@ -6,12 +6,12 @@
   <div class="cs-container">
       <div class="cs-image-group">
           <!--Top left image-->
-          <picture class="cs-picture cs-picture1">
+          <picture class="cs-picture cs-picture1" id="img1">
               <!--Mobile Image-->
-              <source media="(max-width: 600px)" srcset="/public/images/Marketing1.png">
+              <source media="(max-width: 600px)" srcset="">
               <!--Tablet and above Image-->
-              <source media="(min-width: 601px)" srcset="/public/images/Marketing1.png">
-              <img loading="lazy" decoding="async" src="/public/images/Marketing1.png" alt="mechanic" width="413" height="500">
+              <source media="(min-width: 601px)" srcset="">
+              <img loading="lazy" decoding="async" src="" alt="Marketing1" width="413" height="500">
           </picture>
           <!--Top Right image-->
           <!-- <picture class="cs-picture cs-picture2"> -->
@@ -41,7 +41,7 @@
   <div class="cs-container">
       <div class="cs-image-group">
           <!--Top left image-->
-          <picture class="cs-picture cs-picture1">
+          <picture class="cs-picture cs-picture1" id="img2">
               <!--Mobile Image-->
               <source media="(max-width: 600px)" srcset="/public/images/Marketing3.png">
               <!--Tablet and above Image-->
@@ -75,7 +75,7 @@
   <div class="cs-container">
       <div class="cs-image-group">
           <!--Top left image-->
-          <picture class="cs-picture cs-picture1">
+          <picture class="cs-picture cs-picture1" id="img3">
               <!--Mobile Image-->
               <source media="(max-width: 600px)" srcset="/public/images/Marketing2.png">
               <!--Tablet and above Image-->
@@ -197,6 +197,19 @@
     position: relative;
     z-index: 1;
   }
+  #img1 {
+    background: url("/public/images/Marketing1.png") no-repeat center center;
+    background-size: cover;
+  }
+  #img2 {
+    background: url("/public/images/Marketing3.png") no-repeat center center;
+    background-size: cover;
+  }
+  #img3 {
+    background: url("/public/images/Marketing2.png") no-repeat center center;
+    background-size: cover;
+  }
+
   #RPsbs-1593 .cs-picture,
   #RPsbsr-1593 .cs-picture {
     position: absolute;
@@ -213,7 +226,7 @@
   #RPsbs-1593 .cs-picture1,
   #RPsbsr-1593 .cs-picture1 {
     /* the percentage heights allow them to be responsive to the height of the parent cs-image-group. On desktop, when the felxbox is set to aling-items: stretch, the cs-image group will stretch to fill the height of the parent container. So when you add more content to the cs-content group and make it taller, the cs-image group will get taller with it and every image will stretch with the parent, making this entire group responsive to the changing amounts of content next to it */
-    /* background: url("../images/chemLab.png") no-repeat center center; */
+    /* background: url("/public/images/Marketing1.png") no-repeat center center; */
     width: 35em;
     height: 79.617834%;
     top: 0;
@@ -222,6 +235,7 @@
   }
   #RPsbs-1593 .cs-picture2,
   #RPsbsr-1593 .cs-picture2 {
+    /* background: url("/public/images/Marketing2.png") no-repeat center center; */
     width: 25.8125em;
     height: 44.585987%;
     bottom: 0;
